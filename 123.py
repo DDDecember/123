@@ -3,9 +3,9 @@ import streamlit as st
 
 st.title('1A2B game')
 st.markdown("""
-大家應該都有玩過這個猜數字的遊戲吧，
-A 代表的是：數字猜對位子也對。
-B 代表的是：數字對了，但是位子不對。
+這是一個猜數字的遊戲，
+A 代表的是：數字對，位子對。
+B 代表的是：數字對，位子不對。
 0～9會隨機抽出不重複的四位數字，準備好就開始吧 
 """)
 st.title('👇👇')
@@ -33,7 +33,7 @@ if not number.isdigit():  #cheak all input is digit
     pass
 else:
     if number==st.session_state.answer:
-        st.write('好棒棒！你猜對了')
+        st.write('好棒！你猜對了')
         #break
     for i in range(4):
         #st.session_state(st.session_state.answer)
